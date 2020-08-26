@@ -1,0 +1,41 @@
+.character-list-root {
+  width: 40vh;
+  border: 1px solid white;
+}
+.list-header {
+  background-color: white;
+  font-size: 3vh;
+  padding: 1vh 0vh 1vh 2vh;
+}
+.list {
+  height: 70vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.list-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 40vh;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #d4d4d4;
+}
+.list-item:focus {
+  outline: 0;
+  background-color: #808080;
+}
+.character-name {
+  color: white;
+  font-size: 1.75vh;
+  justify-self: flex-start;
+  margin-right: 2vh;
+}
+.character-image {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 100%;
+  margin-left: 2vh;
+}
