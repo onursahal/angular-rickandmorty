@@ -1,13 +1,15 @@
-<div class="main-card" *ngIf="character">
-  <div class="img-container">
-    <img class="img" src="{{ character.image }}" height="100px" width="100px" />
-  </div>
-  <div class="info-container">
-    <div class="info">Name: {{ character.name }}</div>
-    <div class="info">Gender: {{ character.gender }}</div>
-    <div class="info">Status: {{ character.status }}</div>
-    <div class="info">Species: {{ character.species }}</div>
-    <div class="info">Type: {{ character.type }}</div>
-    <div class="info">Origin: {{ character.origin.name }}</div>
+<div class="character-details-root" *ngIf="character">
+  <div class="details-header">{{ character.name }} Details</div>
+  <div class="details-container">
+    <img class="character-image" src="{{ character.image }}" />
+    <div>
+      <div class="character-info">Name: {{ character.name }}</div>
+      <div class="character-info">Status: {{ character.status }}</div>
+      <div class="character-info">Species: {{ character.species }}</div>
+      <div class="character-info">Type: {{ character.type }}</div>
+      <div class="character-info">Gender: {{ character.gender }}</div>
+      <div class="character-info">Origin: {{ character.origin.name }}</div>
+      <div class="character-info">Location: {{ character.location.name }}</div>
+    </div>
   </div>
 </div>

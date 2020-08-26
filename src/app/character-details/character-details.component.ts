@@ -10,13 +10,12 @@ import { Character } from '../character';
 })
 export class CharacterDetailsComponent implements OnInit {
   characterId: number;
-  character: Character;
+  character;
 
   constructor(private characterService: CharacterService) {
-    this.characterService.getCharacter().subscribe((res: Character) => {
+    this.characterService.character.subscribe((res) => {
       console.log(res);
       this.character = res;
-      console.log(this.character);
     });
   }
 

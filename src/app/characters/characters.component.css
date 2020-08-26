@@ -1,7 +1,13 @@
 .characters-root {
   background-color: black;
   height: 91vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+}
+.list {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.details {
+  grid-column: 3/4;
+  grid-row: 2/3;
 }

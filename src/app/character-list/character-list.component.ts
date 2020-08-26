@@ -1,4 +1,10 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Output,
+  EventEmitter,
+  ComponentFactoryResolver,
+} from '@angular/core';
 import { CharacterService } from '../services/character.service';
 
 @Component({

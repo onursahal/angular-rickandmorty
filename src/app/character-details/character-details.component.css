@@ -1,28 +1,24 @@
-.main-card {
-  border: 2px solid black;
-  border-radius: 10px;
-  display: inline-flex;
-  align-self: flex-start;
-  direction: ltr;
-  background-color: cornflowerblue;
+.character-details-root {
+  width: 60vh;
+  border: 1px solid white;
 }
-.img-container {
-  align-self: start;
-  margin: 10px;
+.details-header {
+  background-color: white;
+  font-size: 3vh;
+  padding: 1vh 0vh 1vh 2vh;
 }
-.img {
-  border-radius: 10px;
-  border: 1px solid black;
+.details-container {
+  display: flex;
+  min-height: 20vh;
+  padding: 2vh;
 }
-.info-container {
-  align-self: flex-start;
-  border-left: 1px solid black;
-  padding: 10px;
+.character-image {
+  width: 20vh;
+  height: 20vh;
 }
-.info {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.test {
+.character-info {
   color: white;
+  font-size: 2vh;
+  margin-bottom: 1.25vh;
+  margin-left: 2vh;
 }
